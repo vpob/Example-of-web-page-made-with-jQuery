@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="copyright" lang="ru" content="ООО Системные технологии" />
+    <link type="text/css" rel="stylesheet" href="css/styles.css" />
+    <title>Тестовое задание</title>
+<script type="text/javascript" src="script/jquery.js"></script>
+<script type="text/javascript" src="script/script.js"></script>
+<script>      
+    var imagePath = 'http://www.svezheenadom.ru/images/products/2843056/2843056-0.jpg';
+    
+    var sku = [{"id":1000,"group":"Творог","weight":1,"unit":"Ед."},{"id":2000,"group":"Творог","weight":1,"unit":"Ед."},{"id":3000,"group":"Творог","weight":1,"unit":"Ед."}];
+              
+    var skuName = [{"id":1000,"name":"Творог 9%"},{"id":2000,"name":"Творог 5%"},{"id":3000,"name":"Творог 0%"}] ;        
+              
+    var salesDate = [{"date":"2016-04-08","skuId":1000,"guantity":2},{"date":"2016-04-07","skuId":1000,"guantity":1}, 
+                    {"date":"2016-04-08","skuId":1000,"guantity":1},{"date":"2016-04-08","skuId":2000,"guantity":1}, 
+                    {"date":"2016-04-07","skuId":1000,"guantity":1},{"date":"2016-04-06","skuId":2000,"guantity":3}, 
+                    {"date":"2016-04-04","skuId":1000,"guantity":1},{"date":"2016-04-04","skuId":2000,"guantity":3}, 
+                    {"date":"2016-04-03","skuId":1000,"guantity":1},{"date":"2016-04-03","skuId":2000,"guantity":3}, 
+                    {"date":"2016-04-09","skuId":1000,"guantity":1},{"date":"2016-04-09","skuId":3000,"guantity":3}, 
+                    {"date":"2016-04-01","skuId":1000,"guantity":1},{"date":"2016-04-02","skuId":2000,"guantity":5}, 
+                    {"date":"2016-04-11","skuId":1000,"guantity":1},{"date":"2016-04-06","skuId":2000,"guantity":3}, 
+                    {"date":"2016-04-20","skuId":3000,"guantity":1},{"date":"2016-04-06","skuId":2000,"guantity":3}, 
+                    {"date":"2016-04-07","skuId":1000,"guantity":1},{"date":"2016-04-15","skuId":2000,"guantity":3}, 
+                    {"date":"2016-04-07","skuId":2000,"guantity":1},{"date":"2016-04-07","skuId":1000,"guantity":1}]
+</script>
+</head>
+<body>
+    <div id=fatParrent>
+    <div id="fatChoser"><em>%<br/> жирности</em></div>
+    </div>
+    <div id="upBlock"><img id="pict" src="" alt=""></div>
+    <div id="saleList">
+        <div id=showHist><h2>ПОКАЗАТЬ ИСТОРИЮ ПРОДАЖ</h2></div>
+        <div id=saleHistByDate>
+        </div>        
+    </div>
+        <span class="descr">Атрибуты:</span>
+    <div id="atrib">
+        <table> <tr class="grey"><td>Артикул</td>
+                    <td id="spacer"></td>
+                            <td></td>
+                 </tr>           
+                 <tr>
+                    <td>Базовая единица измерения</td>
+                        <td id="spacer"></td> 
+                            <td class="articul"></td>
+                </tr>
+                <tr class="grey">
+                    <td>Вес</td>
+                        <td id="spacer"></td>
+                            <td class="articul" ></td>
+                </tr>
+                <tr>
+                    <td>Группа</td>
+                        <td id="spacer"></td>
+                            <td class="articul" ></td>
+                </tr>
+                <tr class="grey">
+                    <td>Ставка НДС</td>
+                        <td id="spacer"></td>
+                            <td class="articul" ></td>
+                </tr>
+        </table>
+    </div>
+</body>    
